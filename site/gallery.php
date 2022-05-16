@@ -13,14 +13,12 @@
 <div class="header">
     <div class="h_container">
         <div class="buttons">
-            <a class="button_link" href="../index.php">Main Page</a>
-            <a class="button_link" href="../aboutme.php">About Me</a>
-            <a class="button_link" href="../gallery.php">Gallery</a>
-            <a class="button_link" href="../playthegame.php">Play The Game</a>
-            <a class="button_link" href="../myworks.php">My Works</a>
-            <a class="button_link" href="../mycat.php">мой кот :3</a>
-        </div>
-        <div class="reg_log">
+            <a class="button_link" href="#">Main Page</a>
+            <a class="button_link" href="#">About Me</a>
+            <a class="button_link" href="#">Gallery</a>
+            <a class="button_link" href="#">Play The Game</a>
+            <a class="button_link" href="#">My Works</a>
+            <a class="button_link" href="#">мой кот :3</a>
             <a class="reg_log" id="reg_log" href="#">Register | Login</a>
         </div>
     </div>
