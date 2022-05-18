@@ -22,7 +22,7 @@
             <a class="button_link" href="../mycat.php">мой кот :3</a>
         </div>
         <div class="reg_log">
-            <a class="reg_log" id="reg_log" href="#">Register | Login</a>
+            <a class="reg_log" id="reg_log" href="../reg_log.php">Register | Login</a>
         </div>
     </div>
 </div>

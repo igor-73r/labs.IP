@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'BoldFont';
+    src: url("../font/LatoWeb-Bold.ttf");
+}
+
+.c_container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'BoldFont';
+    font-size: 20px;
+}
+
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    background: none;
+    border: none;
+    /*width: 10px;*/
+}
+.photos{
+    width: 50px;
+    height: auto;
+}
+#left{
+    transform: rotate(-180deg);
+}
+
+#mainImage {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+}

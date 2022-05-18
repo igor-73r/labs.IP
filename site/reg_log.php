@@ -2,9 +2,9 @@
 <html lang = "en">
 <head>
     <meta charset = "UTF-8">
-    <title>Обо Мне</title>
+    <title>Главная страница</title>
     <link rel = "stylesheet" href = "/styles/style.css">
-    <link rel = "stylesheet" href = "/styles/aboutme.css">
+    <link rel = "stylesheet" href = "/styles/reg_log.css">
     <!--<script type = "text/javascript" src = "/scripts/lab1script.js"></script>
     <script type = "text/javascript" src = "/scripts/lab2script.js"></script>-->
 </head>
@@ -28,18 +28,22 @@
 
 <div class="content">
     <div class="c_container">
-        <div class="text_box" id="boxes">
-            <p class="text_content">Меня зовут Игорь, я родился в славном городе Ульяновске...<br>
-            Воооооооот..<br>
-            |Здесь могла бы быть ваша реклама|<br>
-            Еще я люблю своего <a id="cat" href="../mycat.php">кота</a>
-            </p>
+        <div class="login" id="boxes">
+            <p class="text_content">Log in</p>
+            <div class="login_box">
+                <input class="t_arr_lb" type="text" placeholder="login" value>
+                <input class="t_arr_lb" type="text" placeholder="password" value>
+                <input type="button" value="Войти">
+            </div>
         </div>
-        <div class="social" id="boxes">
-            <a href="https://vk.com/theglassofwhisky"><img class="icon" src="../images/svg/vk.svg"></a>
-            <a href="https://github.com/igor-73r"><img class="icon" src="../images/svg/github.svg"></a>
-            <a href="https://t.me/theglassofwhisky"><img class="icon" src="../images/svg/telegram.svg"></a>
-            <a href="https://discordapp.com/users/432543110183125012/"><img class="icon" src="../images/svg/discord.svg"></a>
+        <div class="register" id="boxes">
+            <p class="text_content">Register</p>
+            <div class="reg_box">
+                <input class="t_arr_rb" type="text" placeholder="login" value>
+                <input class="t_arr_rb" type="text" placeholder="password" value>
+                <input class="t_arr_rb" type="text" placeholder="repeat password" value>
+                <input type="button" value="Зарегистрироваться">
+            </div>
         </div>
     </div>
 </div>

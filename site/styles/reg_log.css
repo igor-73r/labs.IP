@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'BoldFont';
+    src: url("../font/LatoWeb-Bold.ttf");
+}
+
+.c_container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-family: 'BoldFont';
+    font-size: 20px;
+}
+
+#boxes{
+    background: lightslategray;
+    border-radius: 30px;
+}
+
+.text_content{margin: 20px;}
+
+.login_box{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.reg_box{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.text_content{
+    text-align: center;
+}
+
+.t_arr_lb{
+    height: 20px;
+    margin: 7px;
+}
+.t_arr_rb{
+    height: 20px;
+    margin: 7px;
+}
