@@ -1,50 +1,52 @@
-<!DOCTYPE html>
-<html lang = "en">
-<head>
-    <meta charset = "UTF-8">
-    <title>Главная страница</title>
-    <link rel = "stylesheet" href = "/styles/style.css">
-    <link rel = "stylesheet" href = "/styles/reg_log.css">
-    <!--<script type = "text/javascript" src = "/scripts/lab1script.js"></script>
-    <script type = "text/javascript" src = "/scripts/lab2script.js"></script>-->
-</head>
-<body>
+<?php include_once "templates/header.php"?>
 
-<div class="header">
-    <div class="h_container">
-        <div class="buttons">
-            <a class="button_link" href="../index.php">Main Page</a>
-            <a class="button_link" href="../aboutme.php">About Me</a>
-            <a class="button_link" href="../gallery.php">Gallery</a>
-            <a class="button_link" href="../playthegame.php">Play The Game</a>
-            <a class="button_link" href="../myworks.php">My Works</a>
-            <a class="button_link" href="../mycat.php">мой кот :3</a>
-        </div>
-        <div class="reg_log">
-            <a class="reg_log" id="reg_log" href="../reg_log.php">Register | Login</a>
-        </div>
-    </div>
-</div>
+<link rel = "stylesheet" href = "/styles/reg_log.css">
 
 <div class="content">
     <div class="c_container">
-        <div class="login" id="boxes">
-            <p class="text_content">Log in</p>
-            <div class="login_box">
-                <input class="t_arr_lb" type="text" placeholder="login" value>
-                <input class="t_arr_lb" type="text" placeholder="password" value>
-                <input type="button" value="Войти">
-            </div>
-        </div>
+
+<!--        <div class="login" id="boxes">-->
+<!--            <form action="/core/user.php" method="post" enctype="multipart/form-data">-->
+<!--                    <p class="text_content">Log in</p>-->
+<!--                    <div class="login_box">-->
+<!--                        <input class="t_arr_lb" type="text" name="user_login" placeholder="login" value>-->
+<!--                        <input class="t_arr_lb" id="pass" type="password" name="user_password" placeholder="password" value>-->
+<!--                        <input type="submit" value="Войти">-->
+<!--                    </div>-->
+<!--            </form>-->
+<!--        </div>-->
+
+        <?php if(isset($error) && !empty($error)){?>
+            <div id="er_boxes"><p class="text_content"><?=$error?></p></div><?php
+        }?>
+
+
+        <?php if (!isset($error) || (isset($error) && !empty($error))){?>
         <div class="register" id="boxes">
-            <p class="text_content">Register</p>
-            <div class="reg_box">
-                <input class="t_arr_rb" type="text" placeholder="login" value>
-                <input class="t_arr_rb" type="text" placeholder="password" value>
-                <input class="t_arr_rb" type="text" placeholder="repeat password" value>
-                <input type="button" value="Зарегистрироваться">
-            </div>
+            <form action="/core/user.php" method="post" enctype="multipart/form-data">
+                <p class="text_content">Register</p>
+                <div class="reg_box">
+                    <input class="t_arr_rb" type="text" name="new_user_login" placeholder="login" value="<?=$login?>" required>
+                    <input class="t_arr_rb" type="password" name="new_user_password" placeholder="password" value required>
+                    <input class="t_arr_rb" type="password" name="new_user_repeat_password" placeholder="repeat password" value required>
+                    <input type="submit" value="Зарегистрироваться">
+                </div>
+            </form>
         </div>
+        <?php } else if(empty($error)){?>
+            <div id="boxes"><p class="text_content">Вы успешно зарегистрированы!</p></div><?php
+        }?>
+
+
+<!--        <div class="register" id="boxes">-->
+<!--            <p class="text_content">Register</p>-->
+<!--            <div class="reg_box">-->
+<!--                <input class="t_arr_rb" type="text" name="new_user_login" placeholder="login" value>-->
+<!--                <input class="t_arr_rb" type="password" name="new_user_password" placeholder="password" value>-->
+<!--                <input class="t_arr_rb" type="password" name="new_user_repeat_password" placeholder="repeat password" value>-->
+<!--                <input type="submit" value="Зарегистрироваться">-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </div>
 </body>
