@@ -2,7 +2,7 @@
 <html lang = "en">
 <head>
     <meta charset = "UTF-8">
-    <title>Лабораторные работы</title>
+    <title>Главная страница</title>
     <link rel = "stylesheet" href = "/styles/style.css">
     <link rel = "stylesheet" href = "/styles/mainpage_content.css">
     <!--<script type = "text/javascript" src = "/scripts/lab1script.js"></script>

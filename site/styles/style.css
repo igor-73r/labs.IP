@@ -49,26 +49,16 @@ h1, h2, h3, h4, h5, h6{
     margin-left: 500px;
 
 }
-/*.buttons{*/
-/*    display: flex;*/
-/*    width: 90%;*/
-/*    justify-content: center;*/
-/*}*/
 
 .reg_log {
     color: #B3CCE6;
     text-decoration: none;
-    /*background: white;*/
-    /*border: white solid 2px;*/
-    /*border-radius: 10px;*/
 }
 .reg_log:hover{color: cadetblue;}
 
 
 .button_link{
-    /*display: inline-block;*/
     margin: 0 20px;
-    /*align-items: center;*/
     text-decoration: none;
     color: black;
 }

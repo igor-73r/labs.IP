@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'BoldFont';
+    src: url("../font/LatoWeb-Bold.ttf");
+}
+
+.c_container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'BoldFont';
+    font-size: 20px;
+}
+
+#boxes{
+    background: lightslategray;
+    border-radius: 30px;
+}
+
+.text_content{
+    font-size: 50px;
+    margin: 20px;
+}

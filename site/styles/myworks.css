@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'BoldFont';
+    src: url("../font/LatoWeb-Bold.ttf");
+}
+
+.c_container_1{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'BoldFont';
+    font-size: 20px;
+}
+.c_container_2{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'BoldFont';
+    font-size: 20px;
+}
+
+.content{
+    flex-wrap: wrap;
+}
+
+.content_boxx{
+    filter: blur(8px);
+}
+
+#boxes{
+    width: auto;
+    height: 250px;
+    overflow: hidden;
+    background: lightslategray;
+    border-radius: 30px;
+}
+
+.photos{
+    height: 100%;
+    width: auto;
+}
+
+.text_box{
+    display: flex;
+    width: 500px;
+    height: 350px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_content{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-botom: 20px;
+    margin-right: 20px;
+}
