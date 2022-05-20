@@ -23,3 +23,29 @@
 .text_content{
     margin: 20px;
 }
+
+@media screen and (max-width: 1000px) {
+    .c_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .text_content{
+        font-size: 45px;
+    }
+
+    @media all and (orientation:landscape) {
+        .text_content{
+            font-size: 20px;
+        }
+    }
+
+    #boxes{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

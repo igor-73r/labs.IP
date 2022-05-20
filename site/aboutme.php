@@ -10,10 +10,10 @@
             </p>
         </div>
         <div class="social" id="boxes">
-            <a href="https://vk.com/theglassofwhisky"><img class="icon" src="../images/svg/vk.svg"></a>
-            <a href="https://github.com/igor-73r"><img class="icon" src="../images/svg/github.svg"></a>
-            <a href="https://t.me/theglassofwhisky"><img class="icon" src="../images/svg/telegram.svg"></a>
-            <a href="https://discordapp.com/users/432543110183125012/"><img class="icon" src="../images/svg/discord.svg"></a>
+            <a href="https://vk.com/theglassofwhisky" target="_blank"><img class="icon" src="../images/svg/vk.svg"></a>
+            <a href="https://github.com/igor-73r" target="_blank"><img class="icon" src="../images/svg/github.svg"></a>
+            <a href="https://t.me/theglassofwhisky" target="_blank"><img class="icon" src="../images/svg/telegram.svg"></a>
+            <a href="https://discordapp.com/users/432543110183125012/" target="_blank"><img class="icon" src="../images/svg/discord.svg"></a>
         </div>
     </div>
 </div>

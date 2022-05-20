@@ -6,9 +6,9 @@
 <div class="content">
     <div class="c_container">
         <div class="gallery">
-            <button class="buttons" id="left" onclick="leftChange()"><img class="photos" src="../images/right-arrow.png"></div>
+            <button class="gbuttons" id="left" onclick="leftChange()"><img class="photos" src="../images/right-arrow.png"></div>
                 <div id="mainImage"></div>
-            <button class="buttons" id="right" onclick="rightChange()"><img class="photos" src="../images/right-arrow.png"></button>
+            <button class="gbuttons" id="right" onclick="rightChange()"><img class="photos" src="../images/right-arrow.png"></button>
         </div>
     </div>
 </div>

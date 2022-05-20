@@ -5,16 +5,16 @@
 <div class="content">
     <div class="c_container">
 
-<!--        <div class="login" id="boxes">-->
-<!--            <form action="/core/user.php" method="post" enctype="multipart/form-data">-->
-<!--                    <p class="text_content">Log in</p>-->
-<!--                    <div class="login_box">-->
-<!--                        <input class="t_arr_lb" type="text" name="user_login" placeholder="login" value>-->
-<!--                        <input class="t_arr_lb" id="pass" type="password" name="user_password" placeholder="password" value>-->
-<!--                        <input type="submit" value="Войти">-->
-<!--                    </div>-->
-<!--            </form>-->
-<!--        </div>-->
+        <div class="login" id="boxes">
+            <form action="/core/user.php" method="post" enctype="multipart/form-data">
+                    <p class="text_content">Log in</p>
+                    <div class="login_box">
+                        <input class="t_arr_lb" type="text" name="user_login" placeholder="login" value>
+                        <input class="t_arr_lb" id="pass" type="password" name="user_password" placeholder="password" value>
+                        <input class="button" type="submit" value="Войти">
+                    </div>
+            </form>
+        </div>
 
         <?php if(isset($error) && !empty($error)){?>
             <div id="er_boxes"><p class="text_content"><?=$error?></p></div><?php
@@ -29,7 +29,7 @@
                     <input class="t_arr_rb" type="text" name="new_user_login" placeholder="login" value="<?=$login?>" required>
                     <input class="t_arr_rb" type="password" name="new_user_password" placeholder="password" value required>
                     <input class="t_arr_rb" type="password" name="new_user_repeat_password" placeholder="repeat password" value required>
-                    <input type="submit" value="Зарегистрироваться">
+                    <input class="button" type="submit" value="Зарегистрироваться">
                 </div>
             </form>
         </div>
