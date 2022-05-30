@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'BoldFont';
+    src: url("../font/LatoWeb-Bold.ttf");
+}
+
+.c_container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'BoldFont';
+    font-size: 20px;
+    flex-direction: row-reverse;
+}
+
+#boxes{
+    width: auto;
+    height: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background: lightslategray;
+    border-radius: 30px;
+}
+
+#aboxes{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    background: lightslategray;
+    border-radius: 250px;
+    justify-content: center;
+}
+
+p{
+    line-height: 200%;
+    font-size: 40px;
+}
+
+.photos{
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+
+}
+
+.icon{
+    width: 50px;
+    margin: 20px;
+}
+.text_content{
+    margin: 20px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.button {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+.buttonss{
+    display: flex;
+    margin-top: 20px;
+}
+
+#buttonex:hover{color: lightcyan;}
+#buttondel:hover{color: red;}
+#buttonred:hover{color: aquamarine;}
+
+@media screen and (max-width: 1000px) {
+    .c_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .text_content{
+        font-size: 45px;
+    }
+    @media all and (orientation:landscape) {
+        .text_content{
+            font-size: 20px;
+        }
+    }
+}

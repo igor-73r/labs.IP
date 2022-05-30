@@ -1,4 +1,14 @@
-<?php session_start();?>
+<?php
+define('PATH', $_SERVER['DOCUMENT_ROOT']);
+
+include_once PATH."../core/db.php";
+DB::getInstance();
+if(isset($_COOKIE['id'])) {
+    $query = "SELECT * FROM `users` WHERE id=" . $_COOKIE['id'];
+    $item = DB::fetch_array(DB::query($query));
+}
+session_start();
+?>
 <!DOCTYPE html>
 <html lang = "en">
 <head>
@@ -33,8 +43,7 @@
 
 
         <?php if (isset($_SESSION['auth'])){?>
-                <a class="reg_log" id="reg_log" href="../#"><?="Пользователь: " . $_SESSION['name'];?></a>
-<!--                echo "Пользователь: " . $_SESSION['name'];-->
+                <a class="reg_log" id="reg_log" href="../user_page.php"><?="Пользователь: " . $item['username'];?></a>
            <? }else{?>
                 <div class="reg_log">
                     <a class="reg_log" id="reg_log" href="../reg_log.php">Register | Login</a>

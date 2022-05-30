@@ -59,10 +59,10 @@ list-style: none;
 position: absolute;
 display: flex;
 flex-direction: column;
-top: 54px;
+top: 84px;
 padding-left: 10px;
 left: 0;
-width: 400px;
+width: auto;
 z-index: 100;
 -webkit-transition: 0.5s ease-in-out;
 -moz-transition: 0.5s ease-in-out;
@@ -82,6 +82,7 @@ background: lightsteelblue;
     -webkit-transform: scaleY(1);
     -ms-transform: scaleY(1);
     transform: scaleY(1);
+    width: 100%;
 }
 
 .button_link_h{
@@ -133,13 +134,13 @@ background: lightsteelblue;
         display: block;
     }
     .header{
-        height: 70px;
+        height: 100px;
     }
     .content{
-        top: 70px;
+        top: 100px;
     }
     .reg_log{
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 
